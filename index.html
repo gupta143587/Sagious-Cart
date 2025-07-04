@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagaious Cart</title>
+    <!-- link for favicon  -->
+    <link rel="shortcut icon" href="./assets/icons/shopping-cart 1.png" type="image/x-icon">
+    <!-- link for bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link for our css style  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-white font-roboto">
+
+    
+    <header id="header" class="bg-hero">
+     
+        <nav id="navbar" class="navbar navbar-light navbar-expand-md">
+            <div class="menu-container container">
+                <a href="#header" class="logo navbar-brand"><img src="sagious-grocery-high-resolution-logo-transparent.png" alt="logo on penguin" class="img-fluid" width="250" ></a>
+                <div class="d-flex col-xxl-5 col-lg-5" style="margin-left: 330px;">
+                    <form class="d-flex align-items-center w-100">
+                        <div class="search-input me-2" style="margin-left: -80%;">
+                            <input placeholder="Search for products" type="search" class="rounded form-control">
+                            <i class="fas fa-search search-icon"></i> 
+                        </div>
+                <button class="navbar-toggler" data-bs-target="#collapsedMenu" data-bs-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+                <menu class="primary-menu navbar-collapse collapse" id="collapsedMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#header" class="font-weight-500 px-4 text-color nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#products" data-bs-toggle="dropdown" class="font-weight-500 dropdown-toggle px-4 text-color nav-link">Products</a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#women">Daily Essentials</a></li>
+                                <li><a class="dropdown-item" href="#men">Beverages</a></li>
+                                <li><a class="dropdown-item" href="#wo">Vegetables</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#about" class="font-weight-500 px-4 text-color nav-link">About Us</a></li>
+                        <li class="nav-item"><a data-bs-target="#modal-1" data-bs-toggle="modal" href="#contact"
+                            class="font-weight-500 px-4 text-color nav-link bg-common btn px-3  fs-6 text-white btn-lg ">Add Cart</a>
+                    </li>
+
+                    </ul>
+                </menu>
+            </div>
+        </nav>
+        <!-- heros  -->
+        <section id="hero" class="hero">
+            <div class="hero-container container py-5">
+                <div class="row gy-5 gy-lg-0 align-items-center py-lg-5 my-lg-3 justify-content-between">
+                    <div class="col-lg-4 col-md-5 order-2 text-center text-lg-start text-md-start text-sm-center order-sm-1 order-md-1 order-lg-1">
+                        <h1 class="hero__title text-color letter-spacing text-uppercase display-2 font-bebas"><span class="text-common-alt">Welcome to Sagious Grocery:</span> Your One-Stop Grocery Store!</h1>
+                        <p class="hero__desc lead fs-6 text-muted">Explore organic, gluten-free, and health-focused products.</p>
+                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="name ms-2">Buy now</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-md-5 order-1">
+                        <img src="slide-1.jpg" alt="model" class="img-fluid" style="border-radius: 10px;transform: none;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header part design end  -->
+
+    <!-- main part design  -->
+    <main id="main">
+
+        <!-- products section -->
+        <section id="women" class="women py-5">
+            <div class="female-container container">
+                <h1 class="font-bebas my-3 display-5 text-uppercase text-color">Daily Essentials</h1>
+                <div class="row row-cols-md-2 gy-4 g-lg-4">
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="306926_4-amul-homogenised-toned-milk.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">Amul Milk 1 Liter</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">Amul Homogenised Toned Milk</p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">250 ₹</div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="40302436_2-maggi-2-minute-spicy-garlic-noodles.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">Maggi</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">2-Minute Spicy Garlic Noodles, 248 g Pouch
+                                </p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">70 ₹</div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="126906_9-aashirvaad-atta-whole-wheat.png" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">Aashirvaad</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">Aashirvaad Atta/Godihittu - Whole Wheat, 10 kg</p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">₹434.71</div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- men  -->
+        <section id="men" class="men py-5">
+            <div class="male-container container">
+                <h1 class="font-bebas my-3 display-5 text-uppercase text-color">Beverages</h1>
+                <div class="row row-cols-md-2 gy-4 g-lg-4">
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="253502_10-boost-nutrition-drink-health-energy-sports.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">Boost</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">Boost Nutrition Drink, 750 g Carton</p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">₹239.19
+                                        </div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="1223943_1-hersheys-milkshake-chocolate-2x180-ml-cookies-creme-2x180-ml-strawberry-2x180-ml.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">Hershey's</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">Hershey's Milkshake - Combo 3 Items</p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">₹216</div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="40086192_7-raw-pressery-cold-extracted-juice-valencia-orange.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">Raw Pressery</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">Raw Pressery Valencia Orange Juice, 1 L
+                                </p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">₹332.5 </div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="wo" class="women py-5">
+            <div class="female-container container">
+                <h1 class="font-bebas my-3 display-5 text-uppercase text-color">Vegetables</h1>
+                <div class="row row-cols-md-2 gy-4 g-lg-4">
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="40320936_1-fresho-potato-fresh-crop.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">fresho!</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">
+                                    fresho! Potato, 1 kg</p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">₹49 </div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="40312601_2-fresho-tomato-local.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">                                  fresho!</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">
+  
+                                    fresho! Tomato - Local, 250 g</p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">₹10</div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-card radius-max p-3">
+                            <div class="card-image">
+                                <img src="40050956_4-fresho-onion-organically-grown.jpg" alt="female jaket" class="img-fluid" width="225">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title h4 text-color">fresho!</h3>
+                                <p class="desc lead fs-6 my-2 mb-1 text-muted">
+                                    fresho! Onion - Organically Grown (Loose), 2 kg</p>
+                                <div class="price-btn d-flex align-items-center justify-content-between">
+                                    <div class="price text-common-alt fs-2 fw-bold">₹150
+                                    </div>
+                                    <div class="btn">
+                                        <a href="#" class="hero__btn bg-common btn px-3 text-uppercase fs-6 text-decoration-none text-white btn-lg d-inline-flex align-items-center">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span class="name ms-2">Buy now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="about-container container py-5">
+                <div class="row gy-5 justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <div class="card flex-row align-items-center shadow-card border-0 mb-3 p-2">
+                            <div class="card-header bg-white border-0">
+                                <img src="image 12.png" width="80" alt="houses" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title font-roboto fs-4 text-color">Find the Perfect fit</h3>
+                                <p class="card-text text-muted small">Every taste is unique, which is why we offer products for every palate.</p>
+                            </div>
+                        </div>
+                        <div class="card flex-row align-items-center shadow-card border-0 mb-3 p-2">
+                            <div class="card-header bg-white border-0">
+                                <img src="image 13.png" width="80" alt="houses" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title font-roboto fs-4 text-color">Fast Delivery</h3>
+                                <p class="card-text text-muted small">One of the many reasons you can shop with peace of
+                                    mind.</p>
+                            </div>
+                        </div>
+                        <div class="card flex-row align-items-center shadow-card border-0 p-2">
+                            <div class="card-header bg-white border-0">
+                                <img src="image 14.png" width="80" alt="houses" class="img-fluid">
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title font-roboto fs-4 text-color">Contact Our Seller</h3>
+                                <p class="card-text text-muted small">They are here to help you. That's quite literally
+                                    what we pay them for.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="4.png" alt="shopping" class="img-fluid" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+    </main>
+
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>Categories</h4>
+        <ul>
+          <li>Vegetables & Fruits</li>
+          <li>Breakfast & instant food</li>
+          <li>Bakery & Biscuits</li>
+          <li>Atta, rice & dal</li>
+          <li>Sauces & spreads</li>
+          <li>Organic & gourmet</li>
+          <li>Baby care</li>
+          <li>Cleaning essentials</li>
+          <li>Personal care</li>
+          </ul></div>
+          <div class="footer-column">
+            <ul><br>
+          <li>Dairy, bread & eggs</li>
+          <li>Cold drinks & juices</li>
+          <li>Tea, coffee & drinks</li>
+          <li>Masala, oil & more</li>
+          <li>Chicken, meat & fish</li>
+          <li>Paan corner</li>
+          <li>Pharma & wellness</li>
+          <li>Home & office</li>
+          <li>Pet care</li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Get to know us</h4>
+        <ul>
+          <li>Company</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Help Center</li>
+          <li>Our Value</li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>For Consumers</h4>
+        <ul>
+          <li>Payments</li>
+          <li>Shipping</li>
+          <li>Product Returns</li>
+          <li>FAQ</li>
+          <li>Shop Checkout</li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Become a Shopper</h4>
+        <ul>
+          <li>Shopper Opportunities</li>
+          <li>Become a Shopper</li>
+          <li>Earnings</li>
+          <li>Ideas & Guides</li>
+          <li>New Retailers</li>
+        </ul>
+      </div>
+  
+      <div class="footer-column">
+        <h4>Freshcart programs</h4>
+        <ul>
+          <li>Freshcart programs</li>
+          <li>Gift Cards</li>
+          <li>Promos & Coupons</li>
+          <li>Freshcart Ads</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+      <hr>     
+    </div>
+       <hr>
+        <div class="payment-partners" style="display: flex; align-items: center;">
+            <h4 style="margin-right: 20px;">Payment Partners</h4>
+            <img src="5.png" alt="Amazon Pay" style="margin-right: 15px; height: 170px;margin-top: 10px;">
+            <img src="6.png" alt="Phone Pay" style="margin-right: 15px; height: 40px;">
+            <img src="7.png" alt="Visa" style="height: 60px;">
+        </div>
+        <hr>
+        <center>
+            <h5>© All rights reserved. Made by <b style="color: #65742b;">Sumanth Anusha Gupta</b>.</h5>
+        </center>
+    </div>
+    
+  </footer>
+  
+</html>
